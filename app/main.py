@@ -8,4 +8,4 @@ if __name__ == "__main__":
         print("Checking for new experiments...")
         print(kfp.Client().list_experiments())
         print(f"Checked at: {datetime.now()}")
-        sleep(60)
+        sleep(1)
