@@ -1,4 +1,5 @@
 from time import sleep
+from datetime import datetime
 import kfp
 
 if __name__ == "__main__":
@@ -6,4 +7,5 @@ if __name__ == "__main__":
     while True:
         print("Checking for new experiments...")
         print(kfp.Client().list_experiments())
-        sleep(secs=60)
+        print(f"Checked at: {datetime.now()}")
+        sleep(60)
